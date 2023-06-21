@@ -61,7 +61,6 @@ async function getSpellsByLevel(spells, level) {
     let progressBarPercentage = 0;
     for (let i = 0; i < spells.length; i++) {
       let foundSpell = await getSpecificSpell('https://www.dnd5eapi.co' + spells[i].url);
-      console.log('current progress: ', i + 1, "/ 319")
       progressBarPercentage = ((i + 1) / 319) * 100;
       setProgressBarPercentage(progressBarPercentage);
       if (foundSpell.level === level) {
@@ -80,8 +79,6 @@ async function getSpellsByClass(spells, dndClass) {
     let progressBarPercentage = 0;
     for (let i = 0; i < spells.length; i++) {
       let foundSpell = await getSpecificSpell('https://www.dnd5eapi.co' + spells[i].url);
-      console.log('current progress: ', i + 1, "/ 319")
-      console.log(foundSpell.classes)
       progressBarPercentage = ((i + 1) / 319) * 100;
       setProgressBarPercentage(progressBarPercentage);
       for (let j = 0; j < foundSpell.classes.length; j++) {
@@ -90,7 +87,6 @@ async function getSpellsByClass(spells, dndClass) {
         }
       }
     }
-    console.log('spell array: ', spellsByClassArray)
     return spellsByClassArray;
   } catch (err) {
     console.warn("warning", err);
