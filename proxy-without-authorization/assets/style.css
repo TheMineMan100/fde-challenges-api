@@ -1,0 +1,59 @@
+body {
+  background-color: #e6eaef;
+  color: #002169;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+button {
+  padding: 5px;
+  width: 8vw;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-mb {
+  margin-bottom: 0;
+}
+
+.extra-padding-bottom {
+  padding-bottom: 20px;
+}
+
+#myProgress {
+  width: 100%;
+  height: 30px;
+  background-color: grey;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.spell-name {
+  font-size: 1.5rem;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
